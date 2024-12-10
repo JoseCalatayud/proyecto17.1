@@ -9,6 +9,7 @@ $(function() {
         
     });
     $("#leer").on("click", function() {
+        $(this).addClass("mio")
         $.get("https://my-json-server.typicode.com/desarrollo-seguro/proyecto17/solicitudes/1", function(data) {
             $("#resLeer").text("Ok"); 
             console.log(data);
@@ -38,6 +39,7 @@ $(function() {
 
 
     $('#actualizar').on('click',function() {
+        
         $.ajax({
             url: "https://my-json-server.typicode.com/desarrollo-seguro/proyecto17/solicitudes/2",
             method: "PUT",
